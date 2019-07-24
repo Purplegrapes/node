@@ -1,0 +1,106 @@
+//@import "~antd/lib/style/core/index.less";
+@import "~antd/lib/style/mixins/index";
+@import "~antd/lib/style/core/base";
+@import "~antd/lib/style/core/motion";
+@import "~antd/lib/style/components";
+
+.ant-table {
+  border-radius: 0;
+
+  table {
+    border-radius: 0;
+
+    thead tr th {
+      padding: 8px 10px;
+      border-radius: 0;
+      font-weight: normal;
+    }
+
+    tfoot tr td,
+    tbody tr td {
+      border-radius: 0;
+      padding: 8px 10px;
+    }
+  }
+
+  .ant-table-header {
+    border-radius: 0;
+  }
+}
+
+th {
+  text-align: center;
+}
+
+.ant-tabs-extra-content {
+  line-height: inherit;
+  float: none!important;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.windows {
+  .ant-table-scroll {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 18px;
+      background: #F7F7F7;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.ant-calendar-picker-clear {
+  display: none !important;
+}
+
+.ant-tooltip-inner {
+  background-color: #7a7a7a;
+}
+
+.ant-calendar-today-btn-disabled {
+  display: none !important;
+}
+
+.ant-tooltip-placement-top .ant-tooltip-arrow,
+.ant-tooltip-placement-topLeft .ant-tooltip-arrow,
+.ant-tooltip-placement-topRight .ant-tooltip-arrow,
+.ant-tooltip-placement-bottom .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomLeft .ant-tooltip-arrow,
+.ant-tooltip-placement-bottomRight .ant-tooltip-arrow
+{
+  border-top-color: #7a7a7a;
+  border-bottom-color: #7a7a7a;
+}
+
+
+label.ant-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+#root {
+  a:focus {
+    text-decoration: none;
+  }
+}
+
+.ant-form-explain {
+  font-size: 12px;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+  padding: 8px 3px !important;
+}
+.ant-layout-header{
+  height: 48px;
+  line-height: 48px;
+}
